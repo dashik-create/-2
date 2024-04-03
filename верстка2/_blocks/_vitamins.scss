@@ -1,0 +1,31 @@
+.vitamins{
+    width: 100%;
+    display: flex;
+    
+    &__container{
+        max-width: 1440px;
+        margin: auto;
+        position: relative;
+
+        img{
+            width: 100%;
+            margin: auto;
+        }
+        marquee{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            @include fontz (110px, 400, $text-color-2);
+        }
+    }
+}
+@media(max-width: 1021px){
+    .vitamins__container{
+        marquee{
+            font-size: 96px;
+        }
+    }
+}

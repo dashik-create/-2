@@ -1,0 +1,32 @@
+.main{
+    width: 100%;
+    max-height: 710px;
+    display: flex;
+    position: relative;
+
+    &__container{
+        margin: auto;
+
+        img{
+            width: 100%;
+            margin: auto;
+        }
+
+        h1{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            @include fontz (57px, 700, $text-color-1);
+            width: 100%;
+        }
+    }
+}
+@media(max-width: 1021px){
+    .main__container{
+        h1{
+            font-size: 46px;
+        }
+    }
+}

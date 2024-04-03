@@ -1,0 +1,49 @@
+$text-color-1: #FFFFFF;
+$text-color-2: #FDFBED;
+
+$accent-color-1: #526E3E;
+$accent-color-2: #FDFBED;
+$accent-color-3: #EDDBBE;
+
+@mixin fontz($f, $w, $c){
+    font-size: $f;
+    font-weight: $w;
+    color: $c;
+}
+
+%button{
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: $accent-color-1;
+    width: 180px;
+    height: 32px;
+    display: flex
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    text-decoration-line: none; 
+}
+
+@import "_blocks/header";
+@import "_blocks/main";
+@import "_blocks/vitamins";
+@import "_blocks/product";
+@import "_blocks/tube";
+@import "_blocks/mineral";
+@import "_blocks/healthy";
+@import "_blocks/stand";
+@import "_blocks/mouth";
+@import "_blocks/star";
+@import "_blocks/_rocc";
+@import "_blocks/_footer";

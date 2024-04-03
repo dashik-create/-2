@@ -1,0 +1,62 @@
+.product{
+    width: 100%;
+    display: flex;
+
+    &__container{
+        width: 1440px;
+        margin: auto;
+        padding: 0 0 5% 0;
+
+        h1{
+            @include fontz (28px, 700, $accent-color-1);
+            text-align: center;
+            padding: 7% 0 5% 0;
+        }
+    }
+
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1%;
+        padding-bottom: 5%;
+    }
+
+    &__card{
+        background-color: $accent-color-2;
+
+        p{
+            background-color: $text-color-1;
+            padding: 8% 1% 8% 1%;
+            @include fontz (16px, 700, $accent-color-1);
+            text-align: center;
+            margin-bottom: 10%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__button{
+        @extend %button;
+        margin: auto;
+        
+        p{
+            margin: auto;
+            @include fontz (13px, 700, $accent-color-1);
+        }
+    }
+}
+
+@media(max-width:1371px){
+    .product__card{
+        p{
+            font-size: 12px;
+        }
+    }
+}
+@media(max-width:1030px){
+    .product__card{
+        p{
+            font-size: 10px;
+        }
+    }
+}

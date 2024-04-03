@@ -1,0 +1,43 @@
+.star{
+    width: 100%;
+    display: flex;
+
+    &__container{
+        margin: auto;
+        height: 420px;
+        display: flex;
+    }
+
+    &__cards{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10%;
+        width: 1100px;
+    }
+
+    &__card{
+        width: 290px;
+        text-align: center;
+
+        p{
+            @include fontz (13px, 400, $accent-color-1);
+            margin-top: 5%;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1118px){
+    .star{
+        &__cards{
+            gap: 5%;
+            width: 800px;
+        }
+        &__card{
+            width: 200px;
+        }
+    }
+}

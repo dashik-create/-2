@@ -1,0 +1,50 @@
+.stand{
+    width: 100%;
+    display: flex;
+
+    &__container{
+        margin: auto;
+        height: 405px;
+    }
+    &__cards{
+        width: 962px;
+        height: 138px;
+        margin-top: 5%;
+    }
+
+    &__icon, &__text{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 7%;
+    }
+
+    h3{
+        @include fontz (28px, 700, $accent-color-1);
+        margin-top: 10%;
+        text-align: center;
+    }
+    p{
+        @include fontz (13px, 400, $accent-color-1);
+        text-align: center;
+        margin-top: 30%;
+    }
+    img{
+        margin: auto;
+    }
+}
+@media(max-width: 980px){
+    .stand{
+        img{
+            width: 60%;
+        }
+        &__cards{
+            width: 762px; 
+        }
+
+        &__icon, &__text{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5%;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.mouth{
+    width: 100%;
+    display: flex;
+    background-color: $accent-color-3;
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__container{
+        width: 1180;
+        height: 800px;
+        margin: auto;
+        display: flex;
+
+        h1{
+            @include fontz (96px, 700, $accent-color-1);
+            margin-right: -200px;
+            z-index: 9;
+            position: relative;
+        }
+    }
+
+    &__img{
+        display: flex;
+        margin: auto;
+        
+        img{
+            width: 100%;
+        }
+    }
+
+    &__text{
+        padding-left: 3%;
+        margin-top: 10%;
+        width: 360px;
+    }
+
+    &__button{
+        margin-top: 50%;
+        @extend %button;
+        p{
+            margin: auto;
+            @include fontz (13px, 700, $accent-color-1);
+        }
+    }
+}
+
+@media(max-width:1175px){
+    .mouth{
+        h1{
+            @include fontz (80px, 700, $accent-color-1);
+        }
+        &__text{
+            margin-top: 15%;
+        }
+    }
+}
+@media(max-width:940px){
+    .mouth{
+        h1{
+            @include fontz (60px, 700, $accent-color-1);
+        }
+        &__text{
+            margin-top: 15%;
+        }
+        &__container{
+            height: 600px;
+        }
+    }
+}

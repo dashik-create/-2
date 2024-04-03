@@ -1,0 +1,120 @@
+.rocc{
+    width: 100%;
+    display: flex;
+
+    &__text{
+        position: absolute;
+        margin-top: 512px;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 5;
+
+        h1{
+            @include fontz (38px, 700, $text-color-1);
+        }
+        p{
+            @include fontz (16px, 700, $text-color-1);
+        }
+    }
+
+    &__container{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 360px 360px 360px;
+        grid-template-rows: 360px 360px 360px;
+    }
+    &__item_1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        width: 100%;
+    }
+    &__item_2{
+
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        width: 100%;
+    }
+    &__item_3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    &__item_4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    &__item_5{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        width: 100%;
+    }
+    &__item_6{
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1457px){
+    .rocc{
+        &__container{
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 300px 300px 300px;
+        }
+        &__item_1, &__item_2, &__item_5, &__item_6{
+            width: 300px;
+        }
+        &__item_3, &__item_4{
+            width: 600px;
+        }
+        &__text{
+            margin-top: 412px;
+        }
+    }
+}
+@media(max-width: 1217px){
+    .rocc{
+        &__container{
+            grid-template-columns: 260px 260px 260px;
+            grid-template-rows: 260px 260px 260px;
+        }
+        &__item_1, &__item_2, &__item_5, &__item_6{
+            width: 260px;
+        }
+        &__item_3, &__item_4{
+            width: 520px;
+        }
+        &__text{
+            margin-top: 350px;
+        }
+    }
+}
+@media(max-width: 1057px){
+    .rocc{
+        &__container{
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+        }
+        &__item_1, &__item_2, &__item_5, &__item_6{
+            width: 200px;
+        }
+        &__item_3, &__item_4{
+            width: 400px;
+        }
+        &__text{
+            margin-top: 300px;
+        }
+    }
+}

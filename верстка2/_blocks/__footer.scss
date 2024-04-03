@@ -1,0 +1,130 @@
+.footer{
+    width: 100%;
+    height: 154px;
+    display: flex;
+    background-color: $accent-color-1;
+
+    &__container{
+        margin: auto;
+        display: flex;
+        width: 1366px;
+
+        p{
+            @include fontz (12px, 400, $accent-color-3);
+        }
+    }
+
+    &__block_1{
+        margin-left: 158px;
+    }
+
+    &__block_2{
+        padding: 0 68px 0 68px;
+        display: flex;
+        p{
+            padding-right: 24px;
+        }
+    }
+    &__block_3{
+        display: flex;
+        padding: 0 44px 0 0;
+        img{
+            padding-right: 24px;
+        }
+    }
+    &__block_4{
+        display: flex;
+        padding: 0 20px 0 0;
+        
+        input{
+            background-color: $accent-color-1;
+            border-color: $accent-color-3;  
+            width: 242px;
+            height: 32px;
+        }
+        ::placeholder{
+            color: $accent-color-3;
+            font-size: 13px;
+            padding-left: 3%;
+        }
+        button{
+            width: 42px;
+            height: 37px;
+            background-color: $accent-color-3;
+            border: none;
+            margin-left: 2%;
+        }
+        label{
+            display: flex;
+        }
+    }
+}
+
+@media(max-width: 1323px){
+    .footer{
+        &__block_1{
+            margin-left: 10%;
+        }
+        &__block_2{
+            padding: 0 3% 0 3%;
+        }
+        &__block_3{
+            padding: 0 2% 0 0; 
+        }
+
+        &__block_4{
+            input{
+                width: 90%;
+            }
+            button{
+                width: 10%;
+            }
+        }
+    }
+}
+@media(max-width: 1062px){
+    .footer{
+        &__block_1{
+            margin-left: 5%;
+        }
+        &__block_2{
+            padding: 0 2% 0 2%;
+        }
+        &__block_3{
+            padding: 0 1% 0 0; 
+        }
+
+        &__block_4{
+            
+            input{
+                width: 80%;
+            }
+            button{
+                width: 10%;
+            }
+        }
+    }
+}
+@media(max-width: 973px){
+    .footer{
+        &__block_1{
+            margin-left: 3%;
+        }
+        &__block_2{
+            padding: 0 1% 0 1%;
+        }
+        &__block_3{
+            padding: 0 1% 0 0; 
+        }
+
+        &__block_4{
+            
+            input{
+                width: 70%;
+            }
+            button{
+                width: 10%;
+            }
+        }
+    }
+}
